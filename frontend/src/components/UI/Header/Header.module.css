@@ -1,0 +1,34 @@
+
+/* Navbar.module.css */
+.siteNavbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+   
+  }
+  
+  .navbarLogo img {
+    height: 50px;
+  }
+  
+  .navbarLinks {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .navbarLinks li {
+    padding: 0 15px;
+    cursor: pointer;
+  }
+  
+  .navbarLinks li:hover {
+    text-decoration: underline;
+  }
+  
+  .navbarCartIcon img {
+    height: 30px;
+  }
+  
