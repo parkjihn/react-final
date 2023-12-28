@@ -14,13 +14,14 @@
   text-align: left;
   font-size: 70px;
   font-weight: bold;
+  width: 70%;
 }
 
 .button {
   background-color: #4CAF50;
   border: none;
   color: white;
-  padding: 14px 140px;
+  padding: 14px 60px;
   text-align: center;
   text-decoration: none;
   font-size: 18px;

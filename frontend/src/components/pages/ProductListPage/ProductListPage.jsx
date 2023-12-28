@@ -6,14 +6,14 @@ import { useLocation, useParams } from "react-router-dom";
 import { BASE_URL } from "../../..";
 import { addNewItemAction } from "../../../store/cartReducer";
 import elem from './ProductListPage.module.css';
-import FilterBar from '../../UI/FilterBar/FilterBar'; // Import the FilterBar component
+import FilterBar from '../../UI/FilterBar/FilterBar'; 
 
 function ProductListPage({ type }) {
     const { categories_name, products } = useSelector(store => store.productList);
     const dispatch = useDispatch();
     const location = useLocation();
     const { id } = useParams();
-    const { discon } = useParams()
+   
     const [saleChecked, setSaleChecked] = useState(false);
     const [priceRange, setPriceRange] = useState({ min: 0, max: Infinity });
     const [filteredProducts, setFilteredProducts] = useState([]);
@@ -33,8 +33,8 @@ function ProductListPage({ type }) {
         let updatedProducts = products.filter(product => {
             const showBasedOnSale = !saleChecked || (product.discountPercentage && product.discountPercentage > 0);
             const withinPriceRange = product.price >= priceRange.min && product.price <= priceRange.max;
-            const hasDiscountPrice = !!product.discont_price; // Check if the product has discont_price
-            return (showBasedOnSale && withinPriceRange) || hasDiscountPrice; // Include discont_price products without filter
+            const hasDiscountPrice = !!product.discont_price; 
+            return (showBasedOnSale && withinPriceRange) || hasDiscountPrice; 
         });
         setFilteredProducts(updatedProducts);
     }, [products, saleChecked, priceRange]);

@@ -1,15 +1,4 @@
 
-// import { BrowserRouter, Routes, Route } from 'react-router-dom'
-// import Header from '../components/Header/Header';
-// import Footer from '../components/Footer/Footer';
-// import CategoriesPage from './components/Pages/Categories/CategoriesPage';
-// import HomePage from './components/Pages/Home/HomePage';
-// import NotFoundPage from './components/Pages/NotFound/NotFoundPage';
-// import ProductsListPage from './components/Pages/Products/ProductsListPage';
-// import ProductPage from './components/Pages/Product/ProductPage';
-// import CategoryPage from './components/Pages/Category/CategoryPage';
-// import BasketPage from './components/Pages/Basket/BasketPage';
-
 import React from "react";
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
 import Header from "./components/UI/Header/Header";

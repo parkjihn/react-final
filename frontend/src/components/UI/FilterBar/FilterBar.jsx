@@ -1,4 +1,4 @@
-// FilterBar.jsx
+
 import React from 'react';
 
 function FilterBar({ setSaleChecked, setPriceRange, saleChecked }) {

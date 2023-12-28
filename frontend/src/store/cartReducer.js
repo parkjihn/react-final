@@ -1,7 +1,7 @@
 
 const defaultState = []
 
-// {id, title, image, price, count}
+
 
 const ADD_NEW_ITEM = 'ADD_NEW_ITEM'
 const CHANGE_COUNT = 'CHANGE_COUNT'
