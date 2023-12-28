@@ -1,45 +1,37 @@
 
-import React from 'react';
-import { Link, Route, Routes } from "react-router-dom";
-import ProductListPage from '../../pages/ProductListPage';
-import categoryRow from './CategoryRow.module.css';
+// import s from "./CategoryRow.module.css";
+// import { useDispatch, useSelector } from "react-redux";
+// import { useEffect } from "react";
+// import { fetchCategoriesList } from "../../../asyncActions/categories";
+// import { Link } from "react-router-dom";
+// import CategoriesItem from "../CategoriesItem/CategoriesItem";
 
-function CategoryRow() {
-  return (
-    <div>
-      <h2>Categories</h2>
-      <div className="categories">
-        <Link to={'/category/fertilizer'}>
-          <div className="category">
-            <img src="fertilizer.jpg" alt="Fertilizer" />
-            <p>Fertilizer</p>
-          </div>
-        </Link>
-        <Link to={'/category/protective-gear'}>
-          <div className="category">
-            <img src="protective-gear.jpg" alt="Protective products and septic tanks" />
-            <p>Protective products and septic tanks</p>
-          </div>
-        </Link>
-        <Link to={'/category/planting-material'}>
-          <div className="category">
-            <img src="planting-material.jpg" alt="Planting material" />
-            <p>Planting material</p>
-          </div>
-        </Link>
-        <Link to={'/category/tools-equipment'}>
-          <div className="category">
-            <img src="tools-equipment.jpg" alt="Tools and equipment" />
-            <p>Tools and equipment</p>
-          </div>
-        </Link>
-      </div>
-      <Routes>
-        <Route path="/category" element={<ProductListPage type='categories'/>}/>
-     
-      </Routes>
-    </div>
-  );
-}
+// function CategoryRow() {
+//   const categories = useSelector((store) => store.categories);
+//   const dispatch = useDispatch();
 
-export default CategoryRow;
+//   useEffect(() => {
+//     if (!categories.length) {
+//       console.log("Fetching categories...");
+//       dispatch(fetchCategoriesList());
+//     }
+//   }, [dispatch]);
+
+//   return (
+//     <ul className={s.items}>
+//       {categories.map((elem) => (
+//         <Link key={elem.id} to={"/category/" + elem.id}>
+//           <CategoriesItem
+//             img={elem.image}
+//             name={elem.title}
+//             id={elem.id}
+//             count={categories.length}
+//           />
+//         </Link>
+//       ))}
+//     </ul>
+//   );
+// }
+
+
+// export default CategoryRow;

@@ -14,10 +14,10 @@ import React from "react";
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
 import Header from "./components/UI/Header/Header";
 import Footer from "./components/UI/Footer/Footer";
-import HomePage from "./components/pages/HomePage";
+import HomePage from "./components/pages/HomePage/HomePage";
 import CategoriesPage from "./components/pages/CategoriesPage";
 import CategoryPage from "./components/pages/CategoryPage";
-import ProductListPage from "./components/pages/ProductListPage";
+import ProductListPage from "./components/pages/ProductListPage/ProductListPage";
 import ProductPage from "./components/pages/ProductPage";
 import CartPage from "./components/pages/CartPage/CartPage";
 import NotFoundPage from "./components/pages/NotFoundPage/NotFoundPage";
