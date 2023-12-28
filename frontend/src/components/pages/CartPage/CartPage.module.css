@@ -7,7 +7,7 @@
     display: grid;
     gap: 20px;
     padding: 20px;
-    /* You can add more styles to fit the design from the screenshot */
+  
 }
 
 .cartItem {
@@ -17,17 +17,17 @@
     padding: 10px;
     background: #fff;
     border: 1px solid #ddd;
-    /* Add more styles to match the screenshot */
+   
 }
 
 .cartItemImage {
     width: 200px;
-    /* You can adjust as needed */
+   
 }
 
 .cartItemTitle, .cartItemPrice {
     margin: 0;
-    /* Add more styles to match the screenshot */
+    
 }
 
 .cartItemCount {
@@ -41,5 +41,5 @@
     height: 30px;
     background-color: #eee;
     border: none;
-    /* Add more styles to match the screenshot */
+   
 }

@@ -5,6 +5,7 @@ const defaultState = []
 
 const ADD_NEW_ITEM = 'ADD_NEW_ITEM'
 const CHANGE_COUNT = 'CHANGE_COUNT'
+const REMOVE_ITEM = 'REMOVE_ITEM'
 
 function changeCountItem(array, id, count){
     return array.map(elem => {
@@ -40,6 +41,11 @@ export const cartReducer = (state = defaultState, action) => {
             } else {
                 return changeCountItem(state, action.payload.id, action.payload.count)
             }
+
+        case REMOVE_ITEM:
+            return state.filter(elem => elem.id !== action.payload)
+
+            
         default:
             return state
     }
@@ -47,4 +53,5 @@ export const cartReducer = (state = defaultState, action) => {
 
 
 export const addNewItemAction = (payload) => ({type: ADD_NEW_ITEM, payload}) 
-export const changeCountAction = (payload) => ({type: CHANGE_COUNT, payload}) 
+export const changeCountAction = (payload) => ({type: CHANGE_COUNT, payload})
+export const removeItemAction = (id) => ({ type: REMOVE_ITEM, payload: id });
